@@ -14,18 +14,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        getCountries { countries ->
-            if (countries != null) {
+        fetchCountries {
+            if (it != null) {
                 rvCountries.apply {
                     setHasFixedSize(true)
                     layoutManager = GridLayoutManager(this@MainActivity, 2)
-                    adapter = CountriesAdapter(countries)
+                    adapter = CountriesAdapter(it)
                 }
             }
         }
     }
 
-    private fun getCountries(callback: (countries: List<Country>?) -> Unit) {
+    private fun fetchCountries(callback: (countries: List<Country>?) -> Unit) {
         val countriesService = ServiceBuilder.buildService(CountryService::class.java)
         val request = countriesService.getAffectedCountryList()
 
