@@ -1,6 +1,5 @@
-package com.example.covidcountriesapi.services
+package com.example.covidcountriesapi
 
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

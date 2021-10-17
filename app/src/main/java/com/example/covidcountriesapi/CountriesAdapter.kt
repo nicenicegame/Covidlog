@@ -1,11 +1,9 @@
-package com.example.covidcountriesapi.adapter
+package com.example.covidcountriesapi
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.covidcountriesapi.R
-import com.example.covidcountriesapi.models.Country
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_country.view.*
 

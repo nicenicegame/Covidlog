@@ -1,6 +1,5 @@
-package com.example.covidcountriesapi.services
+package com.example.covidcountriesapi
 
-import com.example.covidcountriesapi.models.Country
 import retrofit2.Call
 import retrofit2.http.GET
 

@@ -1,4 +1,4 @@
-package com.example.covidcountriesapi.models
+package com.example.covidcountriesapi
 
 import com.google.gson.annotations.SerializedName
 
